@@ -2,22 +2,17 @@
 
 (function(){
 //named function
-    /* function Start()
+    function Start()
     {
-        console.log("App Started");
-    }
- */
-/* let Start=
-function()
-{
-    console.log("App Started");
-}
- */
+      
+      console.log('%App Started...',"color:white;font-size:24px;");
 
- let Start = ()=>
- {
-    console.log("App Started..");
- }
+      let clickMeButton = document.getElementById("ClickMeButton");
+      
+      console.log(clickMeButton);
+    }
+
+
  window.addEventListener("load",Start);
 
 
