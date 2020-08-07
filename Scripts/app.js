@@ -118,7 +118,36 @@
       projectPara3.appendChild(theParagraph3);
       }//Injecting text for Project 3 ends here
     } */
+    function loadHeader()
+    {
+      //creating new object
+      let XHR = new XMLHttpRequest();
     
+      //configuring the message
+      XHR.open("GET","./Views/partials/header.html")
+
+      //executes the request
+      XHR.send();
+
+      XHR.addEventListener("readystatechange",function(){
+        if((XHR.readyState===4) && (XHR.status===200))
+        {
+          let header=document.getElementsByTagName("header")[0];
+
+          let headerData = XHR.responseText;
+          
+          header.innerHTML=headerData;
+
+          HighlightActiveLink();
+
+        }
+
+
+      });
+
+    }
+
+
     function loadindexParagraph()
     {
       //creating new object
@@ -214,6 +243,7 @@
         }
       });
     }
+
     function loadProjectParagraph3()
     {
       //creating new object
@@ -257,6 +287,7 @@
      if(title == "projects")
      {
        console.log("we're on projects page");
+       loadHeader();
        loadProjectParagraph1();
        loadProjectParagraph2();
        loadProjectParagraph3();
@@ -264,7 +295,13 @@
 
      if (title == "home")
      {
+        loadHeader();
         loadindexParagraph();
+     }
+     if (title == "contact")
+     {
+        loadHeader();
+        
      }
      
     }
