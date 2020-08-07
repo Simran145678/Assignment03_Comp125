@@ -27,7 +27,7 @@
     }
   
    
-    
+    //loads header navigation for every page
     function loadHeader()
     {
       //creating new object
@@ -57,6 +57,7 @@
 
     }
 
+    //loads footer navigation for every page
     function loadFooter()
     {
       //creating new object
@@ -86,6 +87,7 @@
 
     }
 
+    //loads paragraph for index.html
     function loadindexParagraph()
     {
       //creating new object
@@ -117,7 +119,8 @@
         }
       });
     }
-    
+  
+    //loads paragraph for projects.html under first project
     function loadProjectParagraph1()
     {
       //creating new object
@@ -150,6 +153,7 @@
       });
     }
 
+    //loads paragraph for projects.html under second project
     function loadProjectParagraph2()
     {
       //creating new object
@@ -182,6 +186,7 @@
       });
     }
 
+    //loads paragraph for projects.html under third project
     function loadProjectParagraph3()
     {
       //creating new object
@@ -213,6 +218,8 @@
         }
       });
     }
+
+
     function Start()
     {
         
@@ -220,7 +227,6 @@
   
      let title= HighlightActiveLink();
   
-     //let success=AddParagraphs();
 
      if(title == "projects")
      {
