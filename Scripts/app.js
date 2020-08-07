@@ -116,7 +116,36 @@ function HighlightActiveLink()
     projectPara3.appendChild(theParagraph3);
     }//Injecting text for Project 3 ends here
   }
+
+  function loadheader()
+  {
+    console.info("header loading");
+    //step1-creating object
+    let XHR= new XMLHttpRequest();
+  //step2-configuring message
+    XHR.open("GET","./Views/partials/header.html");
+  //step-3 executes the request
+    XHR.send();
+
+    XHR.addEventListener("readystatechange",function()
+    {
+      if((XHR.readyState===4)&&(XHR.status===200))
+      {
+
+        let header=document.getElementsByTagName("header")[0];
+
+        let headerData=XHR.responseText;
+
+        header.innerHTML=headerData;
+
+        HighlightActiveLink();
+      }
+    });
+  }
   
+  
+  
+   
   
    
   
@@ -128,6 +157,11 @@ function HighlightActiveLink()
    let title= HighlightActiveLink();
 
    let success=AddParagraphs();
+   if(title=="Projects")
+   {
+     loadheader();
+     
+   }
     
   }
 
