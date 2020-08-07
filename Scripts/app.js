@@ -1,4 +1,4 @@
-//"use strict"
+"use strict"
 //IIFE-immediately invoked expression
 
 (function(){
@@ -26,98 +26,8 @@
     return title;
     }
   
-    //function for injecting paragraphs
-   /* s
-  
-  
-    {  */
-      //Injecting into index page.(about me paragraph)
-      //hooking into the element on index page by using id
-     /*  let indexPara=document.getElementById("indexPara");
-      if(indexPara)
-      {
-        //creating a new Element
-      let theParagraph=document.createElement("p");
-  
-        //configuring the new element
-      theParagraph.textContent=
-  
-      `Hello Everyone! My name is Harsimran Kaur. I am from Chandigarh and I am fond of creative art work.I love to draw, I love to paint, I love to dance and to fill
-       everything around me with creativity.Currently I am pursuing Software Engineering Technician Program from Centennial College and I have also done graduation in
-       Computer Applications. Computers is something that I am interested in and creativity is what I am passionate about. This world will look dull if there will be no
-       creativity. And creativity is what leads to innovation. This era har n number of platforms to show creativity. And digital platform is one of these.
-       In this portfolio, I will be describing about my Projects that I am working on and also you have a contact page where you can send me your information about ideas 
-       or share information or enquire about my projects.
-      
-      `;
-      //attaching the new element
-      indexPara.appendChild(theParagraph);
-      }//injecting into index ends */
-  
-      //injecting into projects page.starting with project 1
-       //hooking into the element on index page by using id
-
-
-      /* let projectPara1=document.getElementById("projectPara1");
-      if(projectPara1)
-      {
-        //creating a new Element
-      let theParagraph1=document.createElement("p");
-  
-        //configuring the new element
-      theParagraph1.textContent=
-  
-      `One of the project that i am working upon is Exibiting my paintings and drawing. You can contact me if you wish to see some of my exclusive stuff.
-      I have prepared 50 oil paintings and 25 Pencil Sketches including 10 still life. I need to make a total of 100 master pieces in order to get them
-      approved for exhibition and Art gallary, sector-10. This exibition is huge, and it is organised only once a year. People from other countries also
-      come to visit. And also it is a great source of earning. Some of pictures of my work are attached below. 
-      
-      `;
-      //attaching the new element
-      projectPara1.appendChild(theParagraph1);
-      }//Injecting text for Project 1 ends here
-  
-  
-      //injecting into project 2 for projects page
-      let projectPara2=document.getElementById("projectPara2");
-      if(projectPara2)
-      {
-        //creating a new Element
-      let theParagraph2=document.createElement("p");
-  
-        //configuring the new element
-      theParagraph2.textContent=
-  
-      `Another project that I am currently working upon is preparing a fusion of 2 folk dances to present at inter university youth fest competition.
-      The 2 dance forms that I have choosen are Lavni(Maharashtra) and Bhangra(Punjab). It will be a combination of south and north. I and my group has 
-      already won 2nd price in Lavni and 1st price in bhangra. Therefore, this time we decided to come with a different thing. We will be making sure that
-      it proves to be one of its kind which will again get us 1st price at National level.
-      
-      `;
-      //attaching the new element
-      projectPara2.appendChild(theParagraph2);
-      }//Injecting text for Project 2 ends here
-  
-  
-      //injecting into project 3 for projects page
-      let projectPara3=document.getElementById("projectPara3");
-      if(projectPara3)
-      {
-        //creating a new Element
-      let theParagraph3=document.createElement("p");
-  
-        //configuring the new element
-      theParagraph3.textContent=
-  
-      `Apart from Dance and painting. I am also working on organising a 10 days course for elementary students in witch they will learn about how to
-      make use of useless things.They will be taught lesson by lesson and also,there will be live session where children will use thier own brains to 
-      transform garbage into usable products.Some pictures of my previous project are given below.
-      
-      `;
-      //attaching the new element
-      projectPara3.appendChild(theParagraph3);
-      }//Injecting text for Project 3 ends here
-    } */
+   
+    
     function loadHeader()
     {
       //creating new object
