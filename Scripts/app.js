@@ -147,6 +147,34 @@
 
     }
 
+    function loadFooter()
+    {
+      //creating new object
+      let XHR = new XMLHttpRequest();
+    
+      //configuring the message
+      XHR.open("GET","./Views/partials/footer.html")
+
+      //executes the request
+      XHR.send();
+
+      XHR.addEventListener("readystatechange",function(){
+        if((XHR.readyState===4) && (XHR.status===200))
+        {
+          let footer=document.getElementsByTagName("footer")[0];
+
+          let footerData = XHR.responseText;
+          
+          footer.innerHTML=footerData;
+
+          HighlightActiveLink();
+
+        }
+
+
+      });
+
+    }
 
     function loadindexParagraph()
     {
@@ -291,16 +319,19 @@
        loadProjectParagraph1();
        loadProjectParagraph2();
        loadProjectParagraph3();
+       loadFooter();
      }
 
      if (title == "home")
      {
         loadHeader();
         loadindexParagraph();
+        loadFooter();
      }
      if (title == "contact")
      {
         loadHeader();
+        loadFooter();
         
      }
      
