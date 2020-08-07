@@ -1,4 +1,4 @@
-"use strict"
+
 //IIFE-immediately invoked expression
 
 (function(){
