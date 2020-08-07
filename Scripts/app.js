@@ -5,11 +5,18 @@
     function Start()
     {
       
-      console.log('%App Started...',"color:white;font-size:24px;");
+      console.log('%cApp Started...',"color:black;font-size:24px;");
 
-      let clickMeButton = document.getElementById("ClickMeButton");
-      
-      console.log(clickMeButton);
+/*       let submitButton= document.getElementById("SubmitButton");
+
+      //Submit button for page 3
+      if(submitButton)
+      {
+      console.log(SubmitButton);
+      }
+ */
+
+
     }
 
 
