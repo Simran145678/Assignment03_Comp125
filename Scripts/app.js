@@ -2,8 +2,8 @@
 //IIFE-immediately invoked expression
 
 (function(){
-//named function
-
+//named functions
+//function to highlight the selected links
 function HighlightActiveLink()
  {
   let title = document.title;
@@ -25,9 +25,14 @@ function HighlightActiveLink()
   }
   return title;
   }
+
+  //function for injecting paragraphs
   function AddParagraphs() 
 
-  { //hooking into the element on index page by using id
+
+  { 
+    //Injecting into index page.(about me paragraph)
+    //hooking into the element on index page by using id
     let indexPara=document.getElementById("indexPara");
     if(indexPara)
     {
@@ -47,8 +52,10 @@ function HighlightActiveLink()
     `;
     //attaching the new element
     indexPara.appendChild(theParagraph);
-    }
+    }//injecting into index ends
 
+    //injecting into projects page.starting with project 1
+     //hooking into the element on index page by using id
     let projectPara1=document.getElementById("projectPara1");
     if(projectPara1)
     {
@@ -66,9 +73,10 @@ function HighlightActiveLink()
     `;
     //attaching the new element
     projectPara1.appendChild(theParagraph1);
-    }
+    }//Injecting text for Project 1 ends here
 
 
+    //injecting into project 2 for projects page
     let projectPara2=document.getElementById("projectPara2");
     if(projectPara2)
     {
@@ -86,9 +94,10 @@ function HighlightActiveLink()
     `;
     //attaching the new element
     projectPara2.appendChild(theParagraph2);
-    }
+    }//Injecting text for Project 2 ends here
 
 
+    //injecting into project 3 for projects page
     let projectPara3=document.getElementById("projectPara3");
     if(projectPara3)
     {
@@ -105,7 +114,7 @@ function HighlightActiveLink()
     `;
     //attaching the new element
     projectPara3.appendChild(theParagraph3);
-    }
+    }//Injecting text for Project 3 ends here
   }
   
   
@@ -114,11 +123,12 @@ function HighlightActiveLink()
   function Start()
   {
       
-      
+      //calling functions 
+
    let title= HighlightActiveLink();
 
    let success=AddParagraphs();
-    console.log("successfully added paragraphs");
+    
   }
 
 
