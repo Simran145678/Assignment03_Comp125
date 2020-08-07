@@ -44,31 +44,55 @@
         <h1 class="display-4">Contact Us</h1>   
         <hr>
         <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">First Name</label>
-            <input type="text" class="form-control" id="firstName" aria-describedby="firstName"
-            placeholder="Enter your First Name" required>
-           </div>
-           <div class="form-group">
-            <label for="exampleInputEmail1">Last Name</label>
-            <input type="text" class="form-control" id="lastName" aria-describedby="lasttName"
-            placeholder="Enter your Last Name" required>
-           </div>
-           <div class="form-group">
-            <label for="contactNumber">Contact Number</label>
-            <input type="tel" class="form-control" id="contactNumber" aria-describedby="contactNumber"
-            placeholder="Enter your Contact Number" required>
-           </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName" aria-describedby="firstName"
+              placeholder="Enter your First Name" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" aria-describedby="lasttName"
+              placeholder="Enter your Last Name" required>
+            </div>
+          </div>
+
+          
           <div class="form-group">
             <label for="emailAddress">Email address</label>
             <input type="email" class="form-control" id="emailAddress" aria-describedby="emailAddress"
             placeholder="Enter your Email" required>
           </div>
-          <div class="form-group">
-            <label for="shortMessage">Type your Message here</label>
-            <textarea class="form-control" id="shortMessage" rows="2" aria-describedby="shortMessage"></textarea>
+           <div class="form-group">
+            <label for="contactNumber">Contact Number</label>
+            <input type="tel" class="form-control" id="contactNumber" aria-describedby="contactNumber"
+            placeholder="Enter your Contact Number" required>
+           </div>
+          
+         
+          <div class="form-group ">
+            <label for="checkBox">Choose what you are interested in</label>
+            <div class="form-check">
+              <input class="form-check-input position-static" type="checkbox" id="artExibition"  aria-label="artExibition">
+              <label class="form-check-label" for="artExibition">
+                Art Exibition
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input position-static" type="checkbox" id="danceCompetition"  aria-label="danceCompetition">
+              <label class="form-check-label" for="danceCompetition">
+                Dance Competition
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input position-static" type="checkbox" id="paperCreativity" aria-label="paperCreativity">
+              <label class="form-check-label" for="paperCreativity">
+                Paper Creativity
+              </label>
+            </div>
+            <hr>
           </div>
-          <button type="submit"  class="btn btn-primary" id="SubmitButton"><i class="fas fa-share-square"></i> Submit</button>          
+          <button   class="btn btn-primary" id="SubmitButton" onclick="index.html"><i class="fas fa-share-square"></i> Submit</button> </a>         
           <button type="reset" class="btn btn-warning" id="resetButton"><i class="fas fa-undo"></i> Reset</button>          
 
         </form>
