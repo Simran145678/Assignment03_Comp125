@@ -94,7 +94,7 @@
       let XHR = new XMLHttpRequest();
     
       //configuring the message
-      XHR.open("GET","./Data/Paragraphs.json")
+      XHR.open("GET","./Scripts/Paragraphs.json")
 
       //executes the request
       XHR.send();
@@ -127,7 +127,7 @@
       let XHR = new XMLHttpRequest();
     
       //configuring the message
-      XHR.open("GET","./Data/Paragraphs.json")
+      XHR.open("GET","./Scripts/Paragraphs.json")
 
       //executes the request
       XHR.send();
@@ -160,7 +160,7 @@
       let XHR = new XMLHttpRequest();
     
       //configuring the message
-      XHR.open("GET","./Data/Paragraphs.json")
+      XHR.open("GET","./Scripts/Paragraphs.json")
 
       //executes the request
       XHR.send();
@@ -193,7 +193,7 @@
       let XHR = new XMLHttpRequest();
     
       //configuring the message
-      XHR.open("GET","./Data/Paragraphs.json")
+      XHR.open("GET","./Scripts/Paragraphs.json")
 
       //executes the request
       XHR.send();
